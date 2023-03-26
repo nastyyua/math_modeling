@@ -77,4 +77,4 @@ for i in 'hello world':
         continue
     print(i)
 
-print('Спасибо за лекцию!!')
+print('Спасибо за лекцию!')
