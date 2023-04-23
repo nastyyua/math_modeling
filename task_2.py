@@ -1,16 +1,21 @@
-from fizical_konstant import g 
-import math as mt
 import numpy as np
+from numpy import tan 
+from numpy import pi
+from fizical_konstant import g
 
 h = 100
-a = mt.pi/3
-b = mt.pi/6
+a = np.pi / 3
+b = 30
 
-c = 1 - mt.tan(b)*mt.tan(a)
-n = 2*mt.cos(b)**2
-m = mt.tan(b)**2
-z = g*h
+u = np.sqrt(g * h * np.tan(b)**2 / (2 * np.cos(a)**2 * (1-np.tan(b)*np.tan(a))))
+print(u)
 
-print( c, n, m ,z)
+from fizical_konstant import ħ
+from fizical_konstant import k
+from fizical_konstant import e 
 
+T = 200
+ε = 300
 
+N = 2 / np.sqrt(np.pi) * ħ / (k*T**(3/2)) * e**(-ε/k*T) * ε**(T/2)
+print(N)
