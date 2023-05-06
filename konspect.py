@@ -74,3 +74,26 @@ L = [1, 2]
 
 changer(x, L[:])
 print(L)
+
+def my_funnc(a=1, b=0):
+    x = 3*a - b
+    return x
+
+print(my_funnc())
+print(my_funnc(3,4))
+
+def my_fuc(a, b = 0):
+    x= 3*a- b
+    return x
+
+def my_fuunc(*args):
+    x = 3 * args[0] - args[1]
+    return x 
+
+print(my_fuunc(3,4))
+
+def my_nunc(**kwrgs):
+    x = 3*kwrgs['obj_1'] - kwrgs['obj_2']
+    return x 
+
+print(my_nunc(obj_1 = 3, obj_2 = 4))
