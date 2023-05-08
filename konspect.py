@@ -97,3 +97,27 @@ def my_nunc(**kwrgs):
     return x 
 
 print(my_nunc(obj_1 = 3, obj_2 = 4))
+
+def my_fucn(a,b):
+    x1 = 3*a - 2*b
+    x2 = 5*b - 4*a
+    return x1,x2
+
+t = my_fucn(3,2)
+print(t)
+print(my_fucn(3,2)[1])
+
+
+def crutoi_chuvak(a=1, b=1):
+    ''' Мотивирующая функция специально ждля тебя
+    Ты крутой!
+    '''
+
+    a=2
+    b=2
+    print('Крутой чувак')
+
+crutoi_chuvak()
+help(crutoi_chuvak)
+
+print('Спасибо за лекцию!')
