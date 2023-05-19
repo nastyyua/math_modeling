@@ -1,9 +1,7 @@
-def construction(a,n):
-    for i in range(1,1,n+1):
-        x = a*i
-        print(x)
-        a += x
-        print(a)
-    return(a)
+def power(a, n):
+    while n > 1:
+        a += a
+        n -= 1
+    return a
 
-print(construction(2,7))
+print(power(2,7))
