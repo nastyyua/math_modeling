@@ -6,7 +6,6 @@ V = 2
 
 def mehanic(m=1, V=1, h=1):
     E = (m*V**2)/2 + m*g*h
-    print(E)
     return E
 
 print(mehanic(5,2,10))

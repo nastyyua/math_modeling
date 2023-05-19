@@ -1,14 +1,9 @@
-a = int(input('Введите минимальное значение: '))
-b = int(input('Введите максимальное значение: '))
-x = int(input('Введите число: '))
+import numpy as np
 
-def cah(a,b,x):
-    y = x**2
-    if a<y and y<b:
-        print(y)
-    else:
-        print('Такого значения не существует')
-    return a,b,x,y 
+def simple_func(a, b, x):
+    n = np.linspace(a, b, x)
+    y = n ** 2
+    print(y)
 
-t = cah(a,b,x)
-print(t)
+
+simple_func(-1, 1, 20)
