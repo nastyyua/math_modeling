@@ -11,4 +11,4 @@ def fin(n):
         s[i] = s[i-1] + s[i-2]
     print(s[n-1])
 
-print(fin(n))
+fin(n)
